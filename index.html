@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Lenguaje y Compiladores</title>
+</head>
+
+<body>
+    <header>
+        <h1>ANALIZADOR LEXICOGRÁFICO Y SINTÁCTICO</h1>
+    </header>
+    <div>
+       <div class="container">
+            <div class="select-file">
+                <h2>Subir Archivo</h2>
+                <input type="file" class="inputfile" id="file-input"/>
+            </div>
+            <div class="principal-content">
+                    <div class="rpta">
+                        <h3>Contenido del archivo</h3>
+                        <textarea id="contenido-archivo"></textarea>
+                    </div>
+            </div>
+        </div>
+        <div class="scanner-principal">
+        <div class="container">
+            <h2 class="title-scanner">SCANNER</h2>
+            <div class="grid">
+                <div class="uniformed-content ">
+                        <h3 class="uniformed-title">Contenido Uniformizado</h3>
+                        <textarea id="uniformed"></textarea>
+                        
+                </div>
+                <div class="secondary-scanner">
+                    <form action="" name="scanner">
+                        <div>
+                            <input name="aux" style="display: none;" type="text" id="aux">
+                            <input name="aux2" style="display: none;" type="text" id="aux2">
+                            <div class="grid">
+                                <div class="token">
+                                    <h3>Token</h3>
+                                    <input class="input" name="token" type="text" id="token">
+                                    <div id="correct" class="correct">Línea correcta</div>
+                                    <div id="incorrect" class="correct">Línea incorrecta</div>
+                                    <div id="identify-language" class="correct language">Lenguaje reconocido</div>
+                        <div id="identify-language-error" class="correct language">Lenguaje no reconocido</div>
+                                     <div class="declarations"    style="display: none;">
+                                        style="display: none;"
+                                        <h3>Verificando Declaraciones</h3>
+                                        <input type="text" name="automata" id="automata" class="input">
+                                        <h3>Verificando Operaciones</h3>
+                                        <input type="text" name="automata2" id="automata2" class="input">
+                                        <h3>Verificando Leer/Mostrar</h3>
+                                        <input type="text" name="automata3" id="automata3" class="input">
+                                    </div> 
+                                </div>
+                                <div id="iluminated-content">
+                                    <div id="reserved" class="iluminated "><p>Palabra Reservada</p></div>
+                                    <div id="operator" class="iluminated "><p>Operador</p></div>
+                                    <div id="var" class="iluminated "><p>Identificador</p></div>
+                                    <div id="numero" class="iluminated"><p>Numero</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <!-- <h3>Cotenido Sin Comentarios</h3> -->
+                            <pre><span id="contenido-archivo2" style="display: none;"></span></pre>
+                            <button id="button-scan" type="button">Scanear</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <h3>INTEGRANTES</h3>
+        <p>Altamirano Alca Fernando</p>
+        <p>Solier Ericka</p>
+        <p>Toribio Alexis</p>
+    </footer>
+</body>
+<script src="./main2.js"></script>
+
+</html>
